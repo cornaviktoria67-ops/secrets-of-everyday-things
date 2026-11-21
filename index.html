@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Таємниці повсякденних речей</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background: #f5f1ff;
+    color: #30304d;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #5141a5, #9275d8);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 19px;
+}
+
+nav {
+    background: #33266f;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe28a;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 20px;
+}
+
+h2 {
+    color: #6047a8;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 29px;
+}
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 15px #d9d0ed;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card .emoji {
+    font-size: 45px;
+}
+
+.card h3 {
+    color: #6047a8;
+    margin: 12px 0;
+}
+
+.experiment {
+    background: #fff5d9;
+    border-radius: 18px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+button {
+    background: #7257bd;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 22px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+button:hover {
+    background: #46358b;
+}
+
+.result {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #5141a5;
+}
+
+footer {
+    background: #33266f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 35px;
+}
+
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🔎 Таємниці повсякденних речей</h1>
+    <p>Відкриваємо незвичайне у звичайному!</p>
+    <p>✨ Стань справжнім дослідником навколишнього світу ✨</p>
+</header>
+
+<nav>
+    <a href="#about">Про проєкт</a>
+    <a href="#secrets">Таємниці</a>
+    <a href="#experiments">Досліди</a>
+    <a href="#games">Ігри</a>
+</nav>
+
+<section class="container" id="about">
+    <h2>🌟 Ласкаво просимо!</h2>
+    <p class="intro">
+        Чи замислювалися ви, скільки секретів приховують
+        звичайні речі навколо нас?
+        Іграшки, папір, вода, посуд та навіть звичайна ложка
+        можуть розповісти дивовижні історії!
+        Запрошуємо дітей і дорослих досліджувати,
+        експериментувати та відкривати нове.
+    </p>
+</section>
+
+<section class="container" id="secrets">
+    <h2>🧩 Що приховують звичайні речі?</h2>
+
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">🧸</div>
+            <h3>Таємниці іграшок</h3>
+            <p>З чого виготовляють іграшки? Чому вони бувають м'якими, твердими та різними на дотик?</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💧</div>
+            <h3>Секрети води</h3>
+            <p>Чому одні предмети плавають, а інші тонуть? Які властивості має вода?</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📄</div>
+            <h3>Таємниці паперу</h3>
+            <p>Чи можна змінити форму паперу? Чому він стає м'яким, коли намокає?</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🧲</div>
+            <h3>Магнітні дива</h3>
+            <p>Чому магніт притягує одні предмети, але не притягує інші?</p>
+        </div>
+    </div>
+</section>
+
+<section class="container" id="experiments">
+    <h2>🔬 Маленька лабораторія</h2>
+
+    <div class="experiment">
+        <h3>💧 Дослід №1. Що плаває, а що тоне?</h3>
+        <p><b>Потрібно:</b> прозора миска з водою, пластикова кришечка, камінчик та дерев'яна паличка.</p>
+        <p><b>Завдання:</b> запропонуйте дитині передбачити, які предмети залишаться на поверхні води, а які опустяться на дно.</p>
+        <p><b>Висновок:</b> різні предмети поводяться у воді по-різному.</p>
+    </div>
+
+    <div class="experiment">
+        <h3>🧲 Дослід №2. Магніт — маленький чарівник</h3>
+        <p><b>Потрібно:</b> магніт, аркуш паперу, пластикова кришечка та залізний предмет.</p>
+        <p><b>Завдання:</b> перевірте, до яких предметів притягується магніт.</p>
+        <p><b>Висновок:</b> магніт притягує певні метали, але не всі матеріали.</p>
+    </div>
+
+    <p>⚠️ Усі досліди проводити разом із дорослими. Використовувати лише безпечні предмети, не брати дрібні деталі до рота.</p>
+</section>
+
+<section class="container" id="games">
+    <h2>🎮 Інтерактивна кімната</h2>
+
+    <div class="card">
+        <div class="emoji">🕵️</div>
+        <h3>Відгадай загадку!</h3>
+        <p>Я прозора, без запаху, потрібна всім для життя. Що це?</p>
+        <button onclick="showAnswer()">Дізнатися відповідь</button>
+        <p class="result" id="answer"></p>
+    </div>
+
+    <div class="card" style="margin-top:20px">
+        <div class="emoji">🔍</div>
+        <h3>Маленький дослідник</h3>
+        <p>Знайди вдома предмет, який може відбивати світло. Що це може бути?</p>
+        <button onclick="showTip()">Отримати підказку</button>
+        <p class="result" id="tip"></p>
+    </div>
+</section>
+
+<footer>
+    <h3>✨ Не просто дивись — досліджуй!</h3>
+    <p>Навчально-пізнавальний проєкт «Таємниці повсякденних речей»</p>
+    <p>Пізнаємо світ разом ❤️</p>
+</footer>
+
+<script>
+function showAnswer() {
+    document.getElementById("answer").innerText =
+    "Правильно! Це вода! 💧";
+}
+
+function showTip() {
+    document.getElementById("tip").innerText =
+    "Наприклад, дзеркало або блискуча металева ложка! 🥄";
+}
+</script>
+
+</body>
+</html>
